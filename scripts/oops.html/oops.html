@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oops</title>
+    <style>
+       .container{
+           display: inline-block;
+           height: 50vh;
+           width: 50vh;
+           background-color: aqua;
+       }
+       .phara{
+           height: 30vh;
+           width: 30vh;
+           background-color: rgb(192, 149, 235);
+           color: black;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <p class="phara"></p>
+    </div>
+    <script>
+        
+let phara = document.querySelector('p');
+alert('working')
+
+class person{
+     
+    constructor(name,surname,age,hobby){
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+        this.hobby = hobby;
+
+        
+    }
+    InformationMsg(){
+        console.log(`${this.name} ${this.surname}`)
+        // phara.textContent = this.name + ' ' + this.surname;
+       phara.textContent = this.name  + ' ' + this.surname + ' ' + this.hobby;
+    }
+
+    showMsg(){
+        phara.textContent = (`hello ${this.name}`)
+    }
+}
+
+let per = new person('swati','semwal',22,['reading','playing','skating']);
+per.showMsg();
+// per.InformationMsg();
+    </script>
+</body>
+</html>
