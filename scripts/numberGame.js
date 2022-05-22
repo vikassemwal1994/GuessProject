@@ -10,6 +10,7 @@ let randomNumber = Math.floor(Math.random() * 10) + 1;
     When you want to do something to an element, you need to select it first.
 */
 const guesses = document.querySelector('.guesses');
+// const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi');
 
